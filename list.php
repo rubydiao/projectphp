@@ -51,15 +51,14 @@ $query = mysqli_query($conn, $sql_fetch_todos);
       </thead>
       <tbody>
         <?php $idpro = 0; ?>
-        <?php while ($row = mysqli_fetch_array($query)) { ?>
+        <?php while ($row = mysqli_fetch_array($query)) {?>
           <tr>
             <?php $idpro += 1; ?>
             <th scope="row"><?php echo $idpro ?></th>
             <td><?php echo $row['proname'] ?></td>
             <td><?php echo $row['amount'] ?></td>
             <td><?php echo $row['time'] ?></td>
-            <td><a name="edit" id="" class="btn btn-warning" href="fix.php?id=<?php echo $row['id'] ?>&message=<?php echo $row['proname']; ?> "
-role="button">
+            <td><a name="edit" id="" class="btn btn-warning" href="fix.php?id=<?php echo $row['id'] ?>&message=<?php echo $row['proname']; ?> " role="button">
                 แก้ไข
               </a></td>
             <td><a name="id" id="" class="btn btn-danger" href="main/delete.php?id=<?php echo $row['id'] ?>" role="button">

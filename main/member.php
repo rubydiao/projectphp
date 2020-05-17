@@ -1,16 +1,3 @@
-<?php
-session_start();
-require_once "../Database/Database.php";
-if ($_SESSION['username'] == null) {
-  echo "<script>alert('กรุณาเข้าสู่ระบบ')</script>";
-  header("Refresh:0 , url = ../index.html");
-  exit();
-}
-$name = $_SESSION['username'];
-$sql_fetch_todos = "SELECT * FROM user ORDER BY id DESC";
-$query = mysqli_query($conn, $sql_fetch_todos);
-
-?>
 <!doctype html>
 <html lang="en">
 
