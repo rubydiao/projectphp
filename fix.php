@@ -73,7 +73,7 @@ $query = mysqli_query($conn, $sql_fetch_todos);
             </div>
             <div class="form-group">
               <label for="exampleInputPassword1">จำนวน</label>
-              <input type="text" class="form-control" name="value" required>
+              <input type="text" value = "<?php echo $_GET['amount'] ?>" class="form-control" name="value" required>
               <input type="hidden" value="<?php echo $_GET['id'] ?>" name="id" />
             </div>
             

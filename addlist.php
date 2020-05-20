@@ -69,7 +69,7 @@ $query = mysqli_query($conn, $sql_fetch_todos);
         </div>
         <div class="form-group">
           <label for="exampleInputPassword1">จำนวน</label>
-          <input type="text" class="form-control" name="amount" required > </div> <br>
+          <input type="number" class="form-control" name="amount" required > </div> <br>
           <div class="form-button">
             <button type="submit" class="btn btn-success " style="float:right">เพิ่มรายการ</button>
             <a name="" id="" class="btn btn-warning" href="list.php" style="float: left" role="button">ย้อนกลับ</a>

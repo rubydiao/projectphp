@@ -58,7 +58,7 @@ $query = mysqli_query($conn, $sql_fetch_todos);
             <td><?php echo $row['proname'] ?></td>
             <td><?php echo $row['amount'] ?></td>
             <td><?php echo $row['time'] ?></td>
-            <td><a name="edit" id="" class="btn btn-warning" href="fix.php?id=<?php echo $row['id'] ?>&message=<?php echo $row['proname']; ?> " role="button">
+            <td><a name="edit" id="" class="btn btn-warning" href="fix.php?id=<?php echo $row['id'] ?>&message=<?php echo $row['proname'] ?>&amount=<?php echo $row['amount'];?> " role="button">
                 แก้ไข
               </a></td>
             <td><a name="id" id="" class="btn btn-danger" href="main/delete.php?id=<?php echo $row['id'] ?>" role="button">
