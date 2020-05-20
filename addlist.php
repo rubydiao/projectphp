@@ -18,7 +18,6 @@ $query = mysqli_query($conn, $sql_fetch_todos);
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
@@ -26,7 +25,7 @@ $query = mysqli_query($conn, $sql_fetch_todos);
 <body>
   <div class="section">
     <nav class="navbar navbar-success bg-success justify-content-between">
-      <a class="navbar-brand" style = "color :white">Home</a>
+      <a class="navbar-brand" style="color :white">Home</a>
       <form class="form-inline">
         <a name="" id="" class="btn btn-danger" href="index.html" role="button">ออกจากระบบ</a>
       </form>
@@ -47,34 +46,34 @@ $query = mysqli_query($conn, $sql_fetch_todos);
         </tr>
       </thead>
       <tbody>
-        <?php $idpro = 0; ?>
-        <?php while ($row = mysqli_fetch_array($query)) { ?>
+        <?php
+        $idpro = 1;
+        while ($row = mysqli_fetch_array($query)) { ?>
           <tr>
-            <?php $idpro +=1; ?>
             <th scope="row"><?php echo $idpro ?></th>
             <td><?php echo $row['proname'] ?></td>
             <td><?php echo $row['amount'] ?></td>
             <td><?php echo $row['time'] ?></td>
           </tr>
-        <?php } ?>
+        <?php
+          $idpro++;
+        } ?>
       </tbody>
     </table>
     <br>
     <div class="addproduct">
-        <form method="POST" action="main/addlist.php">
-      <div class="form-group">
-              <label for="exampleInputEmail1">รายการสินค้า</label>
-              <input type="text" class="form-control" name="name"  required>
-            </div>
-            <div class="form-group">
-              <label for="exampleInputPassword1">จำนวน</label>
-              <input type="text" class="form-control" name="amount" required
-            </div>
-            
-        <br>
-        <div class="form-button">
-          <button type="submit" class="btn btn-success " style = "float:right">เพิ่มรายการ</button>
+      <form method="POST" action="main/addlist.php">
+        <div class="form-group">
+          <label for="exampleInputEmail1">รายการสินค้า</label>
+          <input type="text" class="form-control" name="name" required>
         </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">จำนวน</label>
+          <input type="text" class="form-control" name="amount" required > </div> <br>
+          <div class="form-button">
+            <button type="submit" class="btn btn-success " style="float:right">เพิ่มรายการ</button>
+            <a name="" id="" class="btn btn-warning" href="list.php" style="float: left" role="button">ย้อนกลับ</a>
+          </div>
       </form>
     </div>
   </div>

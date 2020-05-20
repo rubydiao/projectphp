@@ -50,10 +50,10 @@ $query = mysqli_query($conn, $sql_fetch_todos);
         </tr>
       </thead>
       <tbody>
-        <?php $idpro = 0; ?>
-        <?php while ($row = mysqli_fetch_array($query)) {?>
+        <?php 
+        $idpro = 1;
+        while ($row = mysqli_fetch_array($query)) {?>
           <tr>
-            <?php $idpro += 1; ?>
             <th scope="row"><?php echo $idpro ?></th>
             <td><?php echo $row['proname'] ?></td>
             <td><?php echo $row['amount'] ?></td>
@@ -65,7 +65,9 @@ $query = mysqli_query($conn, $sql_fetch_todos);
                 ลบ
               </a></td>
           </tr>
-        <?php } ?>
+        <?php 
+            $idpro++;
+          } ?>
       </tbody>
     </table>
     <br>
