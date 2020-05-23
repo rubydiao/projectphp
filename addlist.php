@@ -2,7 +2,7 @@
 session_start();
 require_once "Database/Database.php";
 if ($_SESSION['username'] == null) {
-  echo "<script>alert('กรุณาเข้าสู่ระบบ');</script>";
+  echo "<script>alert('Please login.');</script>";
   header("Refresh:0 , url=../index.html");
 }
 $username = $_SESSION['username'];
@@ -25,7 +25,7 @@ $query = mysqli_query($conn, $sql_fetch_todos);
 <body>
   <div class="section">
     <nav class="navbar navbar-success bg-success justify-content-between">
-      <a class="navbar-brand" style="color :white">Home</a>
+      <a class="navbar-brand" style="color :white">DiaoService</a>
       <form class="form-inline">
         <a name="" id="" class="btn btn-danger" href="index.html" role="button">ออกจากระบบ</a>
       </form>
@@ -40,6 +40,7 @@ $query = mysqli_query($conn, $sql_fetch_todos);
       <thead class="thead-dark">
         <tr>
           <th scope="col">ลำดับ</th>
+          <th scope="col">รหัสประจำเครื่อง</th>
           <th scope="col">รายการสินค้า</th>
           <th scope="col">จำนวน</th>
           <th scope="col">วันที่ลงทะเบียน</th>
@@ -51,6 +52,7 @@ $query = mysqli_query($conn, $sql_fetch_todos);
         while ($row = mysqli_fetch_array($query)) { ?>
           <tr>
             <th scope="row"><?php echo $idpro ?></th>
+            <td><?php echo $row['id'] ?></td>
             <td><?php echo $row['proname'] ?></td>
             <td><?php echo $row['amount'] ?></td>
             <td><?php echo $row['time'] ?></td>
@@ -77,6 +79,9 @@ $query = mysqli_query($conn, $sql_fetch_todos);
       </form>
     </div>
   </div>
+  <?php
+    mysqli_close($conn);
+  ?>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

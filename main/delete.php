@@ -2,7 +2,7 @@
     session_start();
     require_once "../Database/Database.php";
     if ($_SESSION['username'] == null){
-        echo "<script>alert('กรุณาเข้าสู่ระบบ')</script>";
+        echo "<script>alert('Please login.')</script>";
         header("Refresh:0 , url = ../index.html");
         exit();
 
@@ -12,13 +12,13 @@
     $query_delete = mysqli_query($conn,$sql_delete);
     $row = mysqli_fetch_assoc($query_delete,MYSQLI_ASSOC);
     if(!$row){
-        echo "<script>alert('ลบสำเร็จ')</script>";        
+        echo "<script>alert('Success Deleted')</script>";        
         header("Refresh: 0 , url = ../list.php");
         exit();
 
     }
     else{
-        echo "<script>alert('ลบไม่สำเร็จ')</script>";
+        echo "<script>alert('Fail Delete')</script>";
         header("Refresh: 0 , url = ../list.php");
         exit();
 
