@@ -140,7 +140,7 @@ $query = mysqli_query($conn, $sql_fetch_todos);
 <body>
     <div class="header">
         <p>Ⓒ Narutchai Co. Ltd , 2020</p>
-        <a name="" id="" class="button-logout" href="index.html" role="button">Log out</a>
+        <a name="" id="" class="button-logout" href="logout.php" role="button">Log out</a>
     </div>
     <div class="container">
         <h1>List of product:</h1>
