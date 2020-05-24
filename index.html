@@ -11,7 +11,7 @@
             background-color: rgb(240, 187, 228);
         }
 
-        div {
+        .content{
             width: 50%;
             margin-left: 375px;
             background-color: white;
@@ -61,21 +61,38 @@
             border: 0.05px solid black;
             border-radius: 15px;
             font-family: "Mitr", sans-serif;
-            color: black;
+            color: rgb(255, 255, 255);
             margin: 15px;
             padding: 5px 50px 5px 50px;
-            background-color: #f1cfe5;
+            background-color: rgb(248, 140, 210);
         }
         .regis:hover{
             text-decoration: none;
-            color: rgb(255, 255, 255);
+            color: black;
+            background-color: #f1cfe5;
+        }
+        .footer{
+            position: relative;
+            text-align: right;
+            left: 0;
+            right: 0;
+            height: 100%;
+            padding: 5px 3px 10px 0px;
+            width: 100%;
+            color: white;
+            font-family: "Mitr", sans-serif;
+            margin-top: 200px;
+            bottom: 0;
             background-color: rgb(248, 140, 210);
+        }
+        .footer p{
+            margin-right: 50px;
         }
     </style>
 </head>
 
 <body>
-    <div>
+    <div class = "content">
         <h1>Sign in</h1>
         <form action="login.php" method="POST">
             <label for="username">Username: </label>
@@ -89,6 +106,9 @@
             <input type="submit" value="Sign in">
         </form>
         <a href="main/member.html" class="regis">Register</a>
+    </div>
+    <div class="footer">
+        <p>Ⓒ Narutchai Co. Ltd , 2020</p>
     </div>
 </body>
 
