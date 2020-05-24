@@ -13,7 +13,7 @@
          $query = mysqli_query($conn,$sql);
          $result = mysqli_fetch_array($query , MYSQLI_ASSOC);
          if(!$result){
-             echo "<script>alert('ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง')</script>";
+             echo "<script>alert('Username or Password , Invalid.')</script>";
              header("Refresh:0 , url = logout.php");
              exit();
 
