@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,42 +12,46 @@
 
         .content{
             width: 50%;
-            margin-left: 375px;
+            margin: 0 auto;
             background-color: white;
             border-radius: 30px;
-            border: 0.05px solid black;
+            border: transparent;
             font-family: "Mitr", sans-serif;
             text-align: center;
             margin-top: 150px;
             padding-top: 5px;
             padding-bottom: 20px;
         }
+        .content label{
+            margin-right: 200px;
+        }
 
         input[type="text"] {
             font-family: "Mitr", sans-serif;
             border: 1px solid rgb(199, 198, 198);
             border-radius: 10px;
-            margin: 10px 200px 0px 200px;
-            padding: 3px 150px 6px 1px;
+            margin: 10px auto;
+            padding: 3px 150px 6px 5px;
         }
 
         input[type="password"] {
             font-family: "Mitr", sans-serif;
             border: 1px solid rgb(199, 198, 198);
             border-radius: 10px;
-            margin: 10px 200px 0px 200px;
-            padding: 3px 150px 6px 1px;
+            margin: 0 auto;
+            padding: 3px 150px 6px 5px;
         }
 
         input[type="submit"] {
             border-collapse: collapse;
-            border: 0.05px solid black;
+            border: transparent;
             border-radius: 15px;
             font-family: "Mitr", sans-serif;
             color: black;
-            margin: 15px;
+            margin: 15px auto;
             padding: 5px 50px 5px 50px;
             background-color: #f1cfe5;
+            transition: 0.5s;
         }
         input[type="submit"]:hover {
             color: rgb(255, 255, 255);
@@ -58,13 +61,14 @@
             text-decoration: none;
             font-size: 13px;
             border-collapse: collapse;
-            border: 0.05px solid black;
+            border: transparent;
             border-radius: 15px;
             font-family: "Mitr", sans-serif;
             color: rgb(255, 255, 255);
             margin: 15px;
             padding: 5px 50px 5px 50px;
             background-color: rgb(248, 140, 210);
+            transition: 0.5s;
         }
         .regis:hover{
             text-decoration: none;
@@ -72,17 +76,16 @@
             background-color: #f1cfe5;
         }
         .footer{
-            position: relative;
+            position:fixed;
             text-align: right;
-            left: -8px;
+            left: 0;
             right: 0;
-            height: 100%;
-            padding: 5px 15px 8px 0px;
             width: 100%;
+            height: 100%;
             color: white;
             font-family: "Mitr", sans-serif;
-            margin-top: 20px;
-            bottom: -180px;
+            padding-top: 5px;
+            margin-top: 200px;
             background-color: rgb(248, 140, 210);
         }
         .footer p{
@@ -90,7 +93,6 @@
         }
     </style>
 </head>
-
 <body>
     <div class = "content">
         <h1>Sign in</h1>
@@ -111,5 +113,4 @@
         <p>Ⓒ Narutchai Co. Ltd , 2020</p>
     </div>
 </body>
-
 </html>
