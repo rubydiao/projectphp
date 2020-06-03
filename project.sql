@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 16, 2020 at 07:02 AM
+-- Generation Time: Jun 03, 2020 at 06:10 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.1
 
@@ -40,9 +40,12 @@ CREATE TABLE `product` (
 --
 
 INSERT INTO `product` (`id`, `proname`, `amount`, `time`) VALUES
-(1, 'Car', '200', '2020-04-15 16:16:37'),
-(2, 'Porsche', '1', '2020-04-15 16:21:51'),
-(14, 'กีตาร์', '1', '2020-04-16 04:05:19');
+(100, 'Cat', '6', '2020-05-21 07:20:57'),
+(101, 'เครื่องบิน', '90', '2020-05-21 07:21:18'),
+(103, 'Banana', '70', '2020-05-23 18:40:49'),
+(107, 'SkateBoard', '2', '2020-05-24 20:15:50'),
+(108, 'IphoneSE', '1', '2020-05-24 20:16:56'),
+(110, 'Asus Rog Strix', '1', '2020-05-24 20:46:15');
 
 -- --------------------------------------------------------
 
@@ -62,10 +65,9 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `username`, `password`, `name`) VALUES
-(1, 'diao', 'fe01ce2a7fbac8fafaed7c982a04e229', 'Diao'),
-(6, 'narut', '8277e0910d750195b448797616e091ad', 'diao'),
-(8, 'jame', 'aa2d084c572fcef85706883a05d06d01', 'jame'),
-(10, 's', '3691308f2a4c2f6983f2880d32e29c84', 'ss');
+(11, 'd', '8277e0910d750195b448797616e091ad', 'd'),
+(13, 'Narutchai', '8f6abc03cba4adba65940fff3a378ff9', 'Nhongharn'),
+(17, 'แตน', '71922ed8d1f8d91d0723e772469cafba', 'แตน');
 
 --
 -- Indexes for dumped tables
@@ -91,13 +93,13 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `product`
 --
 ALTER TABLE `product`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=111;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
