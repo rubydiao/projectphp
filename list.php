@@ -26,14 +26,16 @@ $query = mysqli_query($conn, $sql_fetch_todos);
             background-color: rgb(240, 187, 228);
         }
         .header {
-            position: relative;
-            left: -7px;
-            height: 100%;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            height: 50px;
             padding: 5px 13px 11px 0px;
             width: 100%;
             color: white;
             font-family: "Mitr", sans-serif;
-            margin-top: -10px;
+            margin-top: 0px;
             bottom: 0;
             background-color: rgb(248, 140, 210);
         }
@@ -42,22 +44,24 @@ $query = mysqli_query($conn, $sql_fetch_todos);
             text-align: left;
         }
         .button-logout {
+            position: relative;
             margin-top: -50px;
             margin-right: 20px;
             float: right;
             text-decoration: none;
-            border: 0.05px solid black;
+            border: transparent;
             border-radius: 15px;
             background-color: #e60000;
             padding: 10px 10px 10px 10px;
             color: white;
+            transition: 0.5s;
         }
         .button-logout:hover {
             background-color: #D9ddd4;
             color: red;
         }
         .container {
-            margin-left: 480px;
+            margin: 90px auto;
             margin-bottom: 50px;
             border-radius: 30px;
             text-align: center;
@@ -100,6 +104,7 @@ $query = mysqli_query($conn, $sql_fetch_todos);
             color: black;
             text-decoration: none;
             padding: 4px 20px 4px 20px;
+            transition: 0.5s;
         }
         .modify .bfix:hover {
             background-color: #fdb515;
@@ -111,6 +116,7 @@ $query = mysqli_query($conn, $sql_fetch_todos);
             text-decoration: none;
             color: white;
             padding: 4px 20px 4px 20px;
+            transition: 0.5s;
         }
         .delete .bdelete:hover {
             background-color: #D9ddd4;
@@ -123,6 +129,7 @@ $query = mysqli_query($conn, $sql_fetch_todos);
             text-decoration: none;
             color: white;
             background-color: #00A600;
+            transition: 0.5s;
         }
         .Addlist:hover {
             color: black;
