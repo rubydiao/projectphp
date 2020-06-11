@@ -145,7 +145,7 @@ $query = mysqli_query($conn, $sql_fetch_todos);
     </div>
     <div class="container">
         <h1>List of product:</h1>
-        <h2>Hello : (username) [<?php echo $username ?>]</h2>
+        <h2>Hello : [<?php echo $username ?>]</h2>
     </div>
     <div class="table-product">
         <table>
