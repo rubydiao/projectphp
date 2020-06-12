@@ -21,7 +21,7 @@ if ($result) {
                 exit();
             } else {
                 echo "<script>alert('Registration isn't complete.')</script>";
-                header("Refresh:0 , url = member.php");
+                header("Refresh:0 , url = member.html");
                 exit();
             }
         } else {
