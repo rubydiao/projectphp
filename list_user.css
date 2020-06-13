@@ -1,0 +1,118 @@
+body {
+    font-family: "Mitr", sans-serif;
+    background-color: rgb(240, 187, 228);
+}
+.header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 50px;
+    padding: 5px 13px 11px 0px;
+    width: 100%;
+    color: white;
+    font-family: "Mitr", sans-serif;
+    margin-top: 0px;
+    bottom: 0;
+    background-color: rgb(248, 140, 210);
+}
+.header p {
+    margin-left: 20px;
+    text-align: left;
+}
+.button-logout {
+    position: relative;
+    margin-top: -50px;
+    margin-right: 20px;
+    float: right;
+    text-decoration: none;
+    border: transparent;
+    border-radius: 15px;
+    background-color: #e60000;
+    padding: 10px 10px 10px 10px;
+    color: white;
+    transition: 0.5s;
+}
+.button-logout:hover {
+    background-color: #D9ddd4;
+    color: red;
+}
+.container {
+    margin: 90px auto;
+    margin-bottom: 50px;
+    border-radius: 30px;
+    text-align: center;
+    background-color: white;
+    width: 40%;
+    padding-bottom: 10px;
+}
+table th,
+tr,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px 0px 10px 0px;
+}
+table {
+    width: 100%;
+}
+th {
+    color: white;
+    background-color: rgb(248, 140, 210);
+}
+tr {
+    background-color: white;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.timeregis {
+    text-align: center;
+}
+.user{
+    text-align: center;
+}
+.myname {
+    text-align: center;
+}
+.delete {
+    text-align: center;
+}
+.delete .bdelete {
+    border-radius: 15px;
+    background-color: #e60000;
+    text-decoration: none;
+    color: white;
+    padding: 4px 20px 4px 20px;
+    transition: 0.5s;
+}
+.delete .bdelete:hover {
+    background-color: #D9ddd4;
+    color: red;
+}
+.Addlist {
+    margin-right: 100px;
+    padding: 5px 30px 5px 30px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+    background-color: #00A600;
+    transition: 0.5s;
+}
+.Addlist:hover {
+    color: black;
+    background-color: #BBFFBB;
+}
+.btn-manage {
+    background-color: #0c2ef5;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    padding: 5px 10px;
+    transition: 0.5s;
+}
+.btn-manage:hover{
+    color: #0c2ef5;
+    background-color: #50dec899;
+    border: 1px solid #0c2ef5;
+}        

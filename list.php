@@ -136,6 +136,19 @@ $query = mysqli_query($conn, $sql_fetch_todos);
             color: black;
             background-color: #BBFFBB;
         }
+        .btn-manage {
+            background-color: #0c2ef5;
+            color: white;
+            text-decoration: none;
+            border-radius: 15px;
+            padding: 5px 10px;
+            transition: 0.5s;
+        }
+        .btn-manage:hover{
+            color: #0c2ef5;
+            background-color: #50dec899;
+            border: 1px solid #0c2ef5;
+        }        
     </style>
 </head>
 <body>
@@ -146,6 +159,7 @@ $query = mysqli_query($conn, $sql_fetch_todos);
     <div class="container">
         <h1>List of product:</h1>
         <h2>Hello : [<?php echo $username ?>]</h2>
+        <a name="" class="btn-manage" href="manage_user.php" role="button">manage user</a>
     </div>
     <div class="table-product">
         <table>
@@ -182,6 +196,7 @@ $query = mysqli_query($conn, $sql_fetch_todos);
         </table>
         <br>
         <a name="" id="" class="Addlist" style="float:right" href="addlist.php" role="button">Add list</a>
+
     </div>
     <?php
     mysqli_close($conn);

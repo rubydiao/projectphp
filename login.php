@@ -22,7 +22,6 @@
              session_start();
              $_SESSION['username'] = $result['username'];
              header("Location: list.php");
-             session_write_close();
          }
     }
     mysqli_close($conn);
