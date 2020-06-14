@@ -99,6 +99,12 @@ $query = mysqli_query($conn, $sql_fetch_todos);
             border: transparent;
             padding: 7px 200px 7px 5px;
         }
+        [type=number]{
+            font-family: "Mitr", sans-serif;
+            border-radius: 15px;
+            border: transparent;
+            padding: 7px 325px 7px 0px;
+        }
         .return{
             border-radius: 15px;
             background-color: #ffcc33;
@@ -179,7 +185,7 @@ $query = mysqli_query($conn, $sql_fetch_todos);
             <div class="form-group">
                 <label for="exampleInputPassword1">Amount : </label>
                 <br>
-                <input type="text" value="<?php echo $_GET['amount'] ?>" class="form-control" name="value" required>
+                <input type="number" min="1" max="100" value="<?php echo $_GET['amount'] ?>" class="form-control" name="value" required>
                 <input type="hidden" value="<?php echo $_GET['id'] ?>" name="id" />
             </div>
             <br>

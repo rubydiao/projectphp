@@ -92,11 +92,17 @@ $query = mysqli_query($conn, $sql_fetch_todos);
         .form-group {
             margin-left: 600px;
         }
-        [type=text], [type=number] {
+        [type=text] {
             font-family: "Mitr", sans-serif;
             border-radius: 15px;
             border: transparent;
             padding: 7px 200px 7px 5px;
+        }
+        [type=number]{
+            font-family: "Mitr", sans-serif;
+            border-radius: 15px;
+            border: transparent;
+            padding: 7px 325px 7px 0px;
         }
         .return {
             border-radius: 15px;
@@ -177,7 +183,7 @@ $query = mysqli_query($conn, $sql_fetch_todos);
                 <div class="form-group">
                     <label for="exampleInputPassword1">Amount : </label>
                     <br>
-                    <input type="number" class="form-control" name="amount" required> </div> <br>
+                    <input type="number" min = "1" max="100" class="form-control" name="amount" required> </div> <br>
                 <div class="form-button">
                     <button type="submit" class="modify" style="float:right">Add</button>
                     <a name="" id="" class="return" href="list.php" role="button" style="float:left">Return</a>

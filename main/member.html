@@ -104,6 +104,10 @@
       margin-right: 50px;
       position: relative;
     }
+    .gray{
+      font-size: 15px;
+      color: #0606064d;
+    }
   </style>
 </head>
 
@@ -116,6 +120,8 @@
       <div class="form-group">
         <label for="exampleInputEmail1">Username :</label>
         <br>
+        <span class="gray">(8 character or more)</span>
+        <br>
         <input type="text" minlength="8" class="form-control" name="username" placeholder="Your username :" required />
       </div>
       <div class="form-group">
@@ -125,6 +131,8 @@
       </div>
       <div class="form-group">
         <label for="exampleInputPassword1">Password :</label>
+        <br>
+        <span class="gray">(8 character or more)</span>
         <br>
         <input type="password" minlength="8" class="form-control" name="password" placeholder="Your password :" required />
       </div>
