@@ -9,14 +9,11 @@ if ($_SESSION['username'] == null) {
 $username = $_SESSION['username'];
 $sql_fetch_todos = "SELECT * FROM product ORDER BY id ASC";
 $query = mysqli_query($conn, $sql_fetch_todos);
-
 ?>
 <!doctype html>
 <html lang="en">
-
 <head>
     <title>Modify Page</title>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="dp.png">
@@ -70,7 +67,6 @@ $query = mysqli_query($conn, $sql_fetch_todos);
             width: 40%;
             padding-bottom: 10px;
         }
-
         table th,
         tr,
         td {
@@ -78,24 +74,19 @@ $query = mysqli_query($conn, $sql_fetch_todos);
             border-collapse: collapse;
             padding: 10px 0px 10px 0px;
         }
-
         table {
             width: 100%;
         }
-
         th {
             color: white;
             background-color: rgb(248, 140, 210);
         }
-
         tr {
             background-color: white;
         }
-
         tr:nth-child(even) {
             background-color: #f2f2f2;
         }
-
         .timeregis {
             text-align: center;
         }

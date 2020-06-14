@@ -1,4 +1,5 @@
 <?php
+ob_start();
 session_start();
 require_once "../Database/Database.php";
 $username = mysqli_real_escape_string($conn, trim($_POST['username']));

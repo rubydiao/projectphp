@@ -9,14 +9,11 @@ if ($_SESSION['username'] == null) {
 $username = $_SESSION['username'];
 $sql_fetch_todos = "SELECT * FROM product ORDER BY id ASC";
 $query = mysqli_query($conn, $sql_fetch_todos);
-
 ?>
 <!doctype html>
 <html lang="en">
-
 <head>
     <title>หน้าหลัก</title>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="dp.png">
@@ -196,11 +193,9 @@ $query = mysqli_query($conn, $sql_fetch_todos);
         </table>
         <br>
         <a name="" id="" class="Addlist" style="float:right" href="addlist.php" role="button">Add list</a>
-
     </div>
     <?php
     mysqli_close($conn);
     ?>
 </body>
-
 </html>

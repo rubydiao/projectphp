@@ -1,9 +1,9 @@
 <?php
+    ob_start();
     if(trim($_POST['username'])== null|| trim($_POST['password']) == null){
         echo "<script>alert('Please fill in information.')</script>";
         header("Refresh:0 , url =  index.html");
         exit();
-
     }
     else{
          require_once "./Database/Database.php";
@@ -15,8 +15,6 @@
          if(!$result){
              echo "<script>alert('Username or Password , Invalid.')</script>";
              header("Refresh:0 , url = logout.php");
-             exit();
-
          }
          else{
              session_start();

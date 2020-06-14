@@ -1,4 +1,5 @@
 <?php
+ob_start();
 session_start();
 require_once "Database/Database.php";
 if ($_SESSION['username'] == null) {

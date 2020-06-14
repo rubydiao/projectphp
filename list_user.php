@@ -1,4 +1,5 @@
 <?php
+ob_start();
 session_start();
 require_once "Database/Database.php";
 if ($_SESSION['username'] == null) {
@@ -12,10 +13,8 @@ $query = mysqli_query($conn, $sql_fetch_todos);
 ?>
 <!doctype html>
 <html lang="en">
-
 <head>
     <title>หน้าหลัก</title>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="dp.png">
@@ -65,5 +64,4 @@ $query = mysqli_query($conn, $sql_fetch_todos);
     mysqli_close($conn);
     ?>
 </body>
-
 </html>

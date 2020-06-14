@@ -8,14 +8,11 @@ if ($_SESSION['username'] == null) {
 $username = $_SESSION['username'];
 $sql_fetch_todos = "SELECT * FROM product ORDER BY id ASC";
 $query = mysqli_query($conn, $sql_fetch_todos);
-
 ?>
 <!doctype html>
 <html lang="en">
-
 <head>
     <title>หน้าเพิ่มสินค้า</title>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="dp.png">
@@ -69,7 +66,6 @@ $query = mysqli_query($conn, $sql_fetch_todos);
             width: 40%;
             padding-bottom: 10px;
         }
-
         table th,
         tr,
         td {
@@ -77,39 +73,31 @@ $query = mysqli_query($conn, $sql_fetch_todos);
             border-collapse: collapse;
             padding: 10px 0px 10px 0px;
         }
-
         table {
             width: 100%;
         }
-
         th {
             color: white;
             background-color: rgb(248, 140, 210);
         }
-
         tr {
             background-color: white;
         }
-
         tr:nth-child(even) {
             background-color: #f2f2f2;
         }
-
         .timeregis {
             text-align: center;
         }
-
         .form-group {
             margin-left: 600px;
         }
-
         [type=text], [type=number] {
             font-family: "Mitr", sans-serif;
             border-radius: 15px;
             border: transparent;
             padding: 7px 200px 7px 5px;
         }
-
         .return {
             border-radius: 15px;
             background-color: #ffcc33;
@@ -119,14 +107,11 @@ $query = mysqli_query($conn, $sql_fetch_todos);
             margin: 0px 0px 50px 100px;
             font-size: 20px;
             transition: 0.5s;
-
         }
-
         .return:hover {
             background-color: #fdb515;
             color: white;
         }
-
         .modify {
             border-radius: 15px;
             border: transparent;
@@ -138,16 +123,13 @@ $query = mysqli_query($conn, $sql_fetch_todos);
             background-color: #00A600;
             font-family: "Mitr", sans-serif;
             transition: 0.5s;
-
         }
-
         .modify:hover {
             color: black;
             background-color: #BBFFBB;
         }
     </style>
 </head>
-
 <body>
     <div class="header">
         <p>Ⓒ Narutchai Co. Ltd , 2020</p>
@@ -207,5 +189,4 @@ $query = mysqli_query($conn, $sql_fetch_todos);
     mysqli_close($conn);
     ?>
 </body>
-
 </html>

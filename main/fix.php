@@ -1,4 +1,5 @@
 <?php
+    ob_start();
     session_start();
     require_once "../Database/Database.php";
     if($_SESSION['username'] == null){
@@ -12,20 +13,17 @@
             echo "<script>alert('Successfully resolved')</script>";
             header("Refresh:0 , url =../list.php");
             exit();
-
         }
         else{
             echo "<script>alert('Unsuccessful resolved')</script>";
             header("Refresh:0 , url =../list.php");
             exit();
-
         }
     }
     else{
         echo "<script>alert('Please fill in information.')</script>";
         header("Refresh:0 , url = ../list.php");
         exit();
-
     }
     mysqli_close($conn);
 ?>
